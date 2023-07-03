@@ -131,9 +131,6 @@ z = 0xCCB98E
 				actions.add(add(buttonB = createButton(FlxG.width - 44 * 3, FlxG.height - 45 * 3, 132, 127, "b", 0xFFCB00)));
 			case D:
 				actions.add(add(buttonD = createButton(FlxG.width - 44 * 3, FlxG.height - 125 * 3, 132, 127, "d", 0x0078FF)));
-			case A_C:
-				actions.add(add(buttonC = createButton(FlxG.width - 86 * 3, FlxG.height - 45 * 3, 132, 127, "c", 0x44FF00)));
-				actions.add(add(buttonA = createButton(FlxG.width - 44 * 3, FlxG.height - 45 * 3, 132, 127, "a", 0xFF0000)));					
 			case A_B:
 				actions.add(add(buttonA = createButton(FlxG.width - 44 * 3, FlxG.height - 45 * 3, 132, 127, "a", 0xFF0000)));
 				actions.add(add(buttonB = createButton(FlxG.width - 86 * 3, FlxG.height - 45 * 3, 132, 127, "b", 0xFFCB00)));
@@ -249,7 +246,6 @@ enum FlxActionMode {
 	A;
 	B;
 	D;
-	A_C;
 	A_B;
 	A_B_C;
 	A_B_E;

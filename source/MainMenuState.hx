@@ -69,7 +69,7 @@ class MainMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 
 		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
-		var bg:FlxSprite = new FlxSprite(-50).loadGraphic(Paths.image('mainmenu/enu'));
+		var bg:FlxSprite = new FlxSprite(-40, -80).loadGraphic(Paths.image('mainmenu/enu'));
 		bg.scrollFactor.set(0, yScroll);
 		bg.updateHitbox();
 		bg.antialiasing = ClientPrefs.globalAntialiasing;

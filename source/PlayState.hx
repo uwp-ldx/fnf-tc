@@ -84,24 +84,24 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
 	public static var ratingStuff:Array<Dynamic> = [
-		['AAAAA', 1],
-		['AAAAA', 1],
-		['AAAAA', 0.999935],
-		['AAAA:', 0.9998],
-		['AAAA.', 0.9997],
-		['AAAA', 0.99955],
-		['AAA:', 0.999],
-		['AAA.', 0.998],
-		['AAA', 0.997],
-		['AA:', 0.99],
-		['AA.', 0.965],
-		['AA', 0.93],
-		['A:', 0.9],
-		['A.', 0.85],
-		['A', 0.8],
-		['B', 0.7],
+		['D', 0.59],
 		['C', 0.6],
-		['D', 0.6]
+		['B', 0.7],
+		['A', 0.8],
+		['A.', 0.85],
+		['A:', 0.9],
+		['AA', 0.93],
+		['AA.', 0.965],
+		['AA:', 0.99],
+		['AAA', 0.997],
+		['AAA.', 0.998],
+		['AAA:', 0.999],
+		['AAAA', 0.99955],
+		['AAAA.', 0.9997],
+		['AAAA:', 0.9998],
+		['AAAAA', 0.999935],
+		['AAAAA', 1],
+		['AAAAA', 1]
 	];
 
 	//event variables
@@ -1165,7 +1165,7 @@ class PlayState extends MusicBeatState
 		healthBarBG.sprTracker = healthBar;
 
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
-		iconP1.y = healthBar.y - 78.6;
+		iconP1.y = healthBar.y - 95;
 		iconP1.visible = !ClientPrefs.hideHud;
 		iconP1.alpha = ClientPrefs.healthBarAlpha;
 		add(iconP1);
@@ -4220,7 +4220,7 @@ class PlayState extends MusicBeatState
 		comboSpr.x = coolText.x;
 		comboSpr.acceleration.y = FlxG.random.int(200, 300) * playbackRate * playbackRate;
 		comboSpr.velocity.y -= FlxG.random.int(140, 160) * playbackRate;
-		comboSpr.visible = (!ClientPrefs.hideHud && showCombo);
+		comboSpr.visible = (!ClientPrefs.hideHud);
 		comboSpr.x += ClientPrefs.comboOffset[0];
 		comboSpr.y -= ClientPrefs.comboOffset[1];
 		comboSpr.y += 60;
@@ -4238,7 +4238,7 @@ class PlayState extends MusicBeatState
 		{
 			rating.setGraphicSize(Std.int(rating.width * 0.7));
 			rating.antialiasing = ClientPrefs.globalAntialiasing;
-			comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.7));
+			comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.6));
 			comboSpr.antialiasing = ClientPrefs.globalAntialiasing;
 		}
 		else
@@ -5306,7 +5306,7 @@ class PlayState extends MusicBeatState
 
 			// Rating FC
 			ratingFC = "";
-			if (sicks > 0) ratingFC = "SFC";
+			if (sicks > 0) ratingFC = "MFC";
 			if (goods > 0) ratingFC = "GFC";
 			if (bads > 0 || shits > 0) ratingFC = "FC";
 			if (songMisses > 0 && songMisses < 10) ratingFC = "SDCB";

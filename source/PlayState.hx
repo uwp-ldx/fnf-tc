@@ -4308,7 +4308,15 @@ class PlayState extends MusicBeatState
 			numScore.velocity.x = FlxG.random.float(-5, 5) * playbackRate;
 			numScore.visible = !ClientPrefs.hideHud;
 
-			//if (combo >= 10 || combo == 0)
+			if (combo > 10 )
+			{
+				showCombo = true;
+				showComboNum = true;
+			} else {
+				showCombo = false;
+				showComboNum = false;
+			}
+
 			if(showComboNum)
 				insert(members.indexOf(strumLineNotes), numScore);
 

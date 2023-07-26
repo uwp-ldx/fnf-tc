@@ -180,7 +180,7 @@ z = 0xCCB98E
 		button.solid = false;
 		button.immovable = true;
 		button.scrollFactor.set();
-		button.alpha = 0.6;
+		button.alpha = 0.7;
 		button.color = Color;
 		button.antialiasing = orgAntialiasing;
 		#if FLX_DEBUG

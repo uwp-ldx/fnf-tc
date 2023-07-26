@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="fnf test" file="TestEngine" packageName="com.testengine" package="com.testengine" main="Main" version="0.0.1" company="testEngine" />
+	<app title="Takeover Corruption" file="TCEngine" packageName="com.tcengine" package="com.tcengine" main="Main" version="0.1.0b" company="tcEngine" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />

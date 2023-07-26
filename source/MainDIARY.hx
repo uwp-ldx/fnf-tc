@@ -59,7 +59,7 @@ class MainDIARY extends MusicBeatState
 		add(camFollow);
 		add(camFollowPos);
 
-		var bg:FlxSprite = new FlxSprite(-200 -80).loadGraphic(Paths.image('diary/diaryCover'));
+		var bg:FlxSprite = new FlxSprite(-100, 0).loadGraphic(Paths.image('diary/diaryCover'));
 		bg.scrollFactor.set(0, 0);
 		bg.updateHitbox();
 		bg.antialiasing = ClientPrefs.globalAntialiasing;

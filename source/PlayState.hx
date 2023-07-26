@@ -191,6 +191,7 @@ class PlayState extends MusicBeatState
 	public var combo:Int = 0;
 
 	private var healthBarBG:AttachedSprite;
+	private var ChealthBarBG:AttachedSprite;
 	public var healthBar:FlxBar;
 	var songPercent:Float = 0;
 
@@ -1153,6 +1154,14 @@ class PlayState extends MusicBeatState
 		healthBarBG.xAdd = -4;
 		healthBarBG.yAdd = -4;
 		add(healthBarBG);
+
+		ChealthBarBG = new AttachedSprite('Corruption healthBar');
+		ChealthBarBG.scale.set(1.08, 1);
+		ChealthBarBG.x = 321;
+		ChealthBarBG.y = if (ClientPrefs.downScroll) {26;} else {590;}
+		ChealthBarBG.scrollFactor.set();
+		ChealthBarBG.visible = !ClientPrefs.hideHud;
+
 		if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
 
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
@@ -1162,6 +1171,7 @@ class PlayState extends MusicBeatState
 		healthBar.visible = !ClientPrefs.hideHud;
 		healthBar.alpha = ClientPrefs.healthBarAlpha;
 		add(healthBar);
+		add(ChealthBarBG);
 		healthBarBG.sprTracker = healthBar;
 
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
@@ -4308,7 +4318,7 @@ class PlayState extends MusicBeatState
 			numScore.velocity.x = FlxG.random.float(-5, 5) * playbackRate;
 			numScore.visible = !ClientPrefs.hideHud;
 
-			if (combo > 10 )
+			if (combo > 9 )
 			{
 				showCombo = true;
 				showComboNum = true;

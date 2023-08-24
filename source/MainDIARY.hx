@@ -62,6 +62,7 @@ class MainDIARY extends MusicBeatState
 		var bg:FlxSprite = new FlxSprite(-100, 0).loadGraphic(Paths.image('diary/diaryCover'));
 		bg.scrollFactor.set(0, 0);
 		bg.updateHitbox();
+		bg.screenCenter(XY);
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		bg.scale.x = 0.75;
 		bg.scale.y = 0.75;

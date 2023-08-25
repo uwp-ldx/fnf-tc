@@ -2,6 +2,6 @@
 <TextureAtlas imagePath="menu_OPTIONS.png">
 	<!-- Created with Adobe Animate version 22.0.2.168 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="options basic0000" x="0" y="0" width="414" height="91" frameX="400" frameY="0" frameWidth="617" frameHeight="124"/>
-	<SubTexture name="options white0000" x="414" y="0" width="597" height="134" frameX="400" frameY="0" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="OPTIONS IDLE0000" x="0" y="0" width="413" height="91"/>
+	<SubTexture name="OPTIONS PICK0000" x="414" y="0" width="597" height="134"/>
 </TextureAtlas>

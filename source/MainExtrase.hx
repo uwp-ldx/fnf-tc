@@ -106,8 +106,8 @@ class MainExtrase extends MusicBeatState
 			menuItem.scale.x = scale;
 			menuItem.scale.y = scale;
 			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
-			menuItem.animation.addByPrefix('idle', optionShit[i] + " idle", 24);
-			menuItem.animation.addByPrefix('selected', optionShit[i] + " selected", 24);
+			menuItem.animation.addByPrefix('idle', optionShit[i] + " IDLE", 24);
+			menuItem.animation.addByPrefix('selected', optionShit[i] + " PICK", 24);
 			menuItem.animation.play('idle');
 			menuItem.ID = i;
 			menuItems.add(menuItem);
@@ -168,7 +168,7 @@ class MainExtrase extends MusicBeatState
 
 			if (controls.ACCEPT)
 			{
-				if (optionShit[curSelected] == 'donate')
+				if (optionShit[curSelected] == 'GAMEJOLT')
 				{
 					CoolUtil.browserLoad('https://ninja-muffin24.itch.io/funkin');
 				}
@@ -199,7 +199,7 @@ class MainExtrase extends MusicBeatState
 										MusicBeatState.switchState(new CreditsState());
 									case 'DIARY':
 										MusicBeatState.switchState(new MainDIARY());
-									case 'GAMEJOLT':
+									//case 'GAMEJOLT':
 										//LoadingState.loadAndSwitchState(new options.OptionsState());
 									#if MODS_ALLOWED
 									case 'MODS':

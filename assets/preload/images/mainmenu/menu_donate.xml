@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="menu_GAMEJOLT.png">
-	<!-- Created with Adobe Animate version 22.0.2.168 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="donate basic0000" x="0" y="0" width="687" height="143"/>
-	<SubTexture name="donate white0000" x="0" y="143.35" width="687" height="157"/>
-</TextureAtlas>

@@ -2,6 +2,6 @@
 <TextureAtlas imagePath="menu_FREEPLAY.png">
 	<!-- Created with Adobe Animate version 22.0.2.168 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="freeplay basic0000" x="0" y="0" width="527" height="85" frameX="400" frameY="-50" frameWidth="617" frameHeight="124"/>
-	<SubTexture name="freeplay white0001" x="0" y="85" width="595" height="132" frameX="400" frameY="0" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="FREEPLAY IDLE0000" x="0" y="0" width="527" height="85"/>
+	<SubTexture name="FREEPLAY PICK0001" x="0" y="85" width="595" height="132"/>
 </TextureAtlas>
